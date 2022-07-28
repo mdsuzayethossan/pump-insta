@@ -1,0 +1,36 @@
+#work {
+    padding-top: 150px;
+    .container {
+        margin: 0 auto;
+        .work-header {
+            h2 {
+                @include h2-tag;
+            }
+            p {
+                @include p-tag;
+                margin-top: 20px;
+            }
+        }
+        .work-item {
+            @include for-phone-only {
+                text-align: center;
+            }
+            @include for-tablet-landscape-up {
+                text-align: center;
+            }
+            margin-top: 148px;
+            img {
+
+            }
+            h3 {
+                margin: 40px 0;
+                @include h3-tag;
+
+            }
+            p {
+                @include p-tag;
+            }
+        }
+
+    }
+}

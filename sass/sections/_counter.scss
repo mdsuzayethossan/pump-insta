@@ -1,0 +1,51 @@
+#counter {
+    margin: 0 auto;
+    @include for-phone-only {
+        margin-top: 250px;
+    }
+    .container {
+        .counter-main {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #F4F4F4;
+            padding: 80px;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            .counter-vector {
+                position: absolute;
+                left: -4%;
+                bottom: -11%;
+                z-index: -1;
+            }
+            .counter-item{
+                margin: 0 auto;
+                @include for-phone-only {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+                h3 {
+                    font-size: 45px;
+                    font-weight: 700;
+                    line-height: 55px;
+                    @include for-tablet-landscape-up {
+                        font-size: 30px;
+                        line-height: 30px;
+                    }
+                    @include for-phone-only {
+                        font-size: 24px;
+                        line-height: 24px;
+                    }
+                }
+                p {
+                    @include p-tag;
+                }
+            }
+
+        }
+
+    }
+}

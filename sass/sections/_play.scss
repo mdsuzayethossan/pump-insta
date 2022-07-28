@@ -1,0 +1,22 @@
+#play {
+    margin-top: 150px;
+    .container {
+         .video-play {
+            a {
+                img {
+                    @include for-tablet-landscape-up {
+                        width: 60%;
+                    }
+                    @include for-phone-only {
+                        width: 40%;
+                    }
+                    
+                }
+            }
+            img {
+                
+
+            }
+         }
+    }
+}
